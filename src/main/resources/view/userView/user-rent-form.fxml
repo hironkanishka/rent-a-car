@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userController.UserRentFormController">
+   <children>
+      <Button layoutX="491.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnRentNow" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #55efc4;" text="Rent Now">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="76.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnHome" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #ff7675;" text="Home">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="12.0" prefHeight="26.0" prefWidth="606.0" style="-fx-background-color: #74b9ff;" text="Car Hire" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBoxCar" layoutX="452.0" layoutY="100.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Label layoutX="306.0" layoutY="104.0" prefHeight="17.0" prefWidth="91.0" text="Select a Car" textFill="WHITE" />
+      <DatePicker fx:id="fromDate" layoutX="452.0" layoutY="145.0" />
+      <DatePicker fx:id="toDate" layoutX="452.0" layoutY="192.0" />
+      <Label layoutX="306.0" layoutY="196.0" prefHeight="17.0" prefWidth="91.0" text="To" textFill="WHITE" />
+      <Label layoutX="306.0" layoutY="149.0" prefHeight="17.0" prefWidth="91.0" text="From" textFill="WHITE" />
+      <ChoiceBox fx:id="choiceBoxRefundable" layoutX="452.0" layoutY="237.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Label layoutX="306.0" layoutY="241.0" prefHeight="17.0" prefWidth="125.0" text="Refundable Deposit" textFill="WHITE" />
+      <Label layoutX="306.0" layoutY="289.0" prefHeight="17.0" prefWidth="125.0" text="Advanced Payment" textFill="WHITE" />
+      <ChoiceBox fx:id="choiceBoxAdvanced" layoutX="452.0" layoutY="285.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <ChoiceBox fx:id="choiceBoxCarType" layoutX="452.0" layoutY="57.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Label layoutX="308.0" layoutY="61.0" prefHeight="17.0" prefWidth="91.0" text="Select a Car Type" textFill="WHITE" />
+      <Button layoutX="333.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnReset" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #fdcb6e;" text="Reset">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="phone" layoutX="67.0" layoutY="250.0" promptText="phone" />
+      <TextField fx:id="txtId" layoutX="67.0" layoutY="66.0" promptText="id" />
+      <TextField fx:id="address" layoutX="67.0" layoutY="205.0" promptText="address" />
+      <TextField fx:id="nic" layoutX="67.0" layoutY="158.0" promptText="nic" />
+      <TextField fx:id="txtName" layoutX="67.0" layoutY="113.0" promptText="name" />
+      <Label fx:id="balanceLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="330.0" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #f8c291;" text="Balance" textFill="WHITE" />
+      <Label fx:id="totalLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="306.0" layoutY="330.0" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #b8e994;" text="Total" textFill="WHITE" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
