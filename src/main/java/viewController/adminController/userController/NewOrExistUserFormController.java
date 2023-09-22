@@ -1,4 +1,4 @@
-package userController;
+package viewController.adminController.userController;
 
 import javafx.event.ActionEvent;
 import javafx.scene.layout.AnchorPane;

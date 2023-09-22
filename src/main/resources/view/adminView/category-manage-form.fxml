@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootCategoryManage" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminController.CategoryManageFormController">
+<AnchorPane fx:id="rootCategoryManage" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.adminController.CategoryManageFormController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="31.0" text="Category Manage" textFill="WHITE">
          <font>

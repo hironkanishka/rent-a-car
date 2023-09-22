@@ -1,4 +1,4 @@
-package adminController;
+package viewController.adminController;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

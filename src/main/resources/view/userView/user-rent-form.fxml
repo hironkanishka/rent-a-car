@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userController.UserRentFormController">
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.adminController.userController.UserRentFormController">
    <children>
       <Button layoutX="491.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnRentNow" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #55efc4;" text="Rent Now">
          <font>
