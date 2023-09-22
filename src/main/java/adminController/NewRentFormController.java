@@ -1,9 +1,13 @@
 package adminController;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class NewRentFormController {
     public AnchorPane rootNewRent;
@@ -16,10 +20,14 @@ public class NewRentFormController {
     public DatePicker txtFromDate;
     public DatePicker txtToDate;
 
-    public void btnAddAction(ActionEvent actionEvent) {
+    public void btnAddAction(ActionEvent actionEvent) throws IOException {
+
     }
 
-    public void btnBackAction(ActionEvent actionEvent) {
+    public void btnBackAction(ActionEvent actionEvent) throws IOException {
+        Parent node= FXMLLoader.load(getClass().getResource("/view/adminView/rent-form.fxml"));
+        this.rootNewRent.getChildren().clear();
+        this.rootNewRent.getChildren().add(node);
     }
 
     public void btnClearAction(ActionEvent actionEvent) {

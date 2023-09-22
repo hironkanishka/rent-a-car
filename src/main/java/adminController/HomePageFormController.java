@@ -56,4 +56,8 @@ public class HomePageFormController {
         stg.setTitle("Login");
         stg.show();
     }
+
+    public void btnUserAccountManage(ActionEvent actionEvent) {
+
+    }
 }

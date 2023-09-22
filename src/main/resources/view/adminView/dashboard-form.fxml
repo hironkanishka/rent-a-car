@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminController.HomePageFormController">
+<AnchorPane fx:id="root" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #d2dae2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminController.HomePageFormController">
    <children>
-      <Button layoutX="22.0" layoutY="128.0" mnemonicParsing="false" onAction="#btnManageCategories" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Manage Categories" textFill="WHITE">
+      <Button layoutX="22.0" layoutY="120.0" mnemonicParsing="false" onAction="#btnManageCategories" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Manage Categories" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font>
@@ -18,7 +18,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="22.0" layoutY="185.0" mnemonicParsing="false" onAction="#btnManageCars" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Manage Cars" textFill="WHITE">
+      <Button layoutX="22.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnManageCars" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Manage Cars" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font>
@@ -26,7 +26,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="22.0" layoutY="245.0" mnemonicParsing="false" onAction="#btnManageCustomers" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Manage Customers" textFill="WHITE">
+      <Button layoutX="22.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnManageCustomers" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Manage Customers" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font>
@@ -34,7 +34,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="22.0" layoutY="302.0" mnemonicParsing="false" onAction="#btnRentCars" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Rent Cars" textFill="WHITE">
+      <Button layoutX="22.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnRentCars" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #4bcffa;" text="Rent Cars" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font>
@@ -46,8 +46,11 @@
          <font>
             <Font size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="14.0" prefHeight="26.0" prefWidth="606.0" style="-fx-background-color: #d2dae2;" text="Car HIRE ">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="14.0" prefHeight="32.0" prefWidth="607.0" style="-fx-background-color: #34495e;" text="Car HIRE " textFill="WHITE">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
@@ -70,6 +73,11 @@
          <font>
             <Font size="13.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="21.0" layoutY="330.0" mnemonicParsing="false" onAction="#btnUserAccountManage" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #8e44ad;" text="User Account Manage" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
