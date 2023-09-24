@@ -42,8 +42,8 @@ public class HomePageFormController {
         this.rootBranch.getChildren().add(node);
     }
 
-    public void btnRentCars(ActionEvent actionEvent) throws IOException {
-        Parent node=FXMLLoader.load(getClass().getResource("/view/adminView/rent-form.fxml"));
+    public void btnRentals(ActionEvent actionEvent) throws IOException {
+        Parent node=FXMLLoader.load(getClass().getResource("/view/adminView/rentals.fxml"));
         this.rootBranch.getChildren().clear();
         this.rootBranch.getChildren().add(node);
     }
@@ -64,5 +64,11 @@ public class HomePageFormController {
         stg.setScene(scn);
         stg.setTitle("Admin Login");
         stg.show();
+    }
+
+    public void btnReturnManage(ActionEvent actionEvent) throws IOException {
+        Parent node=FXMLLoader.load(getClass().getResource("/view/adminView/return-manage.fxml"));
+        this.rootBranch.getChildren().clear();
+        this.rootBranch.getChildren().add(node);
     }
 }

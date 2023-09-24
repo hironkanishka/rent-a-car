@@ -9,14 +9,12 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 
-public class RentController {
+public class RentalsController {
     public AnchorPane rootRent;
     public TableView tableRent;
 
     public void btnAddAction(ActionEvent actionEvent) throws IOException {
-        Parent node= FXMLLoader.load(getClass().getResource("/view/adminView/new-rent-form.fxml"));
-        this.rootRent.getChildren().clear();
-        this.rootRent.getChildren().add(node);
+
     }
 
     public void mouseClickedRentTable(MouseEvent mouseEvent) {
@@ -24,4 +22,6 @@ public class RentController {
 
     public void btnUpdateAction(ActionEvent actionEvent) {
     }
+
+
 }

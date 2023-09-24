@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootRent" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.adminController.RentalsController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="26.0" prefHeight="21.0" prefWidth="123.0" text="Rentals" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableRent" layoutX="17.0" layoutY="56.0" onMouseClicked="#mouseClickedRentTable" prefHeight="200.0" prefWidth="417.0">
+        <columns>
+          <TableColumn prefWidth="60.0" text="Rent ID" />
+            <TableColumn text="customerId" />
+            <TableColumn prefWidth="55.0" text="CarID" />
+            <TableColumn prefWidth="60.0" text="total" />
+            <TableColumn prefWidth="71.0" text="is_returned" />
+            <TableColumn prefWidth="90.0" text="balance" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
