@@ -1,4 +1,4 @@
-package dto;
+package entity;
 
 import lombok.*;
 
@@ -7,11 +7,12 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class userProfileDto {
-    private String id;
+
+public class CustomerEntity {
+    private String custId;
     private String name;
     private String nic;
-    private String userName;
-     private String  password;
+     private String address;
+     private String phone;
 
 }

@@ -18,25 +18,38 @@ public class LoginFormController {
     public PasswordField txtPassword;
     public AnchorPane rootLogin;
 
-    public void linkRegisterAction(ActionEvent actionEvent) {
-
-    }
-
-    public void btnLoginAction(ActionEvent actionEvent) throws IOException {
-////temp for testing
-        Parent pane1 = FXMLLoader.load(getClass().getResource("/view/adminView/dashboard-form.fxml"));
+    public void linkRegisterAction(ActionEvent actionEvent) throws IOException {
+        Parent pane1 = FXMLLoader.load(getClass().getResource("/view/user-profile-create.fxml"));
         Scene scn =new Scene(pane1);
         Stage stg = (Stage) this.rootLogin.getScene().getWindow();
         stg.setScene(scn);
         stg.setTitle("admin Dashboard");
         stg.show();
 
-       /* if (txtUsername.getText().equals("admin")&& txtPassword.getText().equals("123")) {
+    }
 
+    public void btnLoginAction(ActionEvent actionEvent) throws IOException {
+////temp for testing
+
+
+       if (txtUsername.getText().equals("admin")&& txtPassword.getText().equals("123")) {
+           Parent pane1 = FXMLLoader.load(getClass().getResource("/view/adminView/dashboard-form.fxml"));
+           Scene scn =new Scene(pane1);
+           Stage stg = (Stage) this.rootLogin.getScene().getWindow();
+           stg.setScene(scn);
+           stg.setTitle("admin Dashboard");
+           stg.show();
 
         }else{
+           ////temp for testing
+           Parent pane1 = FXMLLoader.load(getClass().getResource("/view/userView/user-dashboard-form.fxml"));
+           Scene scn =new Scene(pane1);
+           Stage stg = (Stage) this.rootLogin.getScene().getWindow();
+           stg.setScene(scn);
+           stg.setTitle("admin Dashboard");
+           stg.show();
 
-        }*/
+        }
 
     }
 }

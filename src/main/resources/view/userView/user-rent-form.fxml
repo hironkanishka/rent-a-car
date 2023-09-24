@@ -11,7 +11,7 @@
 
 <AnchorPane fx:id="root" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.adminController.userController.UserRentFormController">
    <children>
-      <Button layoutX="491.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnRentNow" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #55efc4;" text="Rent Now">
+      <Button layoutX="485.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnRentNow" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #55efc4;" text="Rent Now">
          <font>
             <Font size="13.0" />
          </font>
@@ -19,7 +19,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="76.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnHome" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #ff7675;" text="Home">
+      <Button layoutX="67.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnHome" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #ff7675;" text="Home">
          <font>
             <Font size="13.0" />
          </font>
@@ -35,8 +35,8 @@
          </cursor>
       </ChoiceBox>
       <Label layoutX="306.0" layoutY="104.0" prefHeight="17.0" prefWidth="91.0" text="Select a Car" textFill="WHITE" />
-      <DatePicker fx:id="fromDate" layoutX="452.0" layoutY="145.0" />
-      <DatePicker fx:id="toDate" layoutX="452.0" layoutY="192.0" />
+      <DatePicker fx:id="fromDate" layoutX="452.0" layoutY="145.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="toDate" layoutX="452.0" layoutY="192.0" prefHeight="25.0" prefWidth="150.0" />
       <Label layoutX="306.0" layoutY="196.0" prefHeight="17.0" prefWidth="91.0" text="To" textFill="WHITE" />
       <Label layoutX="306.0" layoutY="149.0" prefHeight="17.0" prefWidth="91.0" text="From" textFill="WHITE" />
       <ChoiceBox fx:id="choiceBoxRefundable" layoutX="452.0" layoutY="237.0" prefWidth="150.0">
@@ -57,7 +57,7 @@
          </cursor>
       </ChoiceBox>
       <Label layoutX="308.0" layoutY="61.0" prefHeight="17.0" prefWidth="91.0" text="Select a Car Type" textFill="WHITE" />
-      <Button layoutX="333.0" layoutY="402.0" mnemonicParsing="false" onAction="#btnReset" prefHeight="36.0" prefWidth="132.0" style="-fx-background-color: #fdcb6e;" text="Reset">
+      <Button layoutX="306.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnReset" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #fdcb6e;" text="Reset">
          <font>
             <Font size="13.0" />
          </font>
@@ -65,13 +65,16 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TextField fx:id="phone" layoutX="67.0" layoutY="250.0" promptText="phone" />
-      <TextField fx:id="txtId" layoutX="67.0" layoutY="66.0" promptText="id" />
-      <TextField fx:id="address" layoutX="67.0" layoutY="205.0" promptText="address" />
-      <TextField fx:id="nic" layoutX="67.0" layoutY="158.0" promptText="nic" />
-      <TextField fx:id="txtName" layoutX="67.0" layoutY="113.0" promptText="name" />
+      <TextField fx:id="phone" layoutX="67.0" layoutY="330.0" promptText="phone" />
+      <TextField fx:id="address" layoutX="67.0" layoutY="285.0" promptText="address" />
+      <TextField fx:id="nic" layoutX="67.0" layoutY="246.0" promptText="nic" />
+      <TextField fx:id="txtName" layoutX="67.0" layoutY="205.0" promptText="name" />
       <Label fx:id="balanceLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="330.0" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #f8c291;" text="Balance" textFill="WHITE" />
       <Label fx:id="totalLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="306.0" layoutY="330.0" prefHeight="32.0" prefWidth="140.0" style="-fx-background-color: #b8e994;" text="Total" textFill="WHITE" />
+      <Label layoutX="39.0" layoutY="70.0" text="Select your ID if you are Old Customer " textFill="WHITE" />
+      <Label layoutX="60.0" layoutY="137.0" text="Select a New ID if you are New" textFill="WHITE" />
+      <ChoiceBox fx:id="oldCustomerChoice" layoutX="67.0" layoutY="92.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="newCustomerChoice" layoutX="67.0" layoutY="158.0" prefWidth="150.0" />
    </children>
    <cursor>
       <Cursor fx:constant="HAND" />

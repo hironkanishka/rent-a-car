@@ -1,4 +1,4 @@
-package dto;
+package entity;
 
 import lombok.*;
 
@@ -8,7 +8,8 @@ import lombok.*;
 @Setter
 @ToString
 
-public class CategoryDto {
+public class CategoryEntity {
+
 
     private String categoryId;
     private String categoryName;

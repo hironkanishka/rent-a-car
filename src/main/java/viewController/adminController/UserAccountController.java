@@ -17,15 +17,6 @@ public class UserAccountController {
     public void btnAddAction(ActionEvent actionEvent) {
     }
 
-    public void btnHomeAction(ActionEvent actionEvent) throws IOException {
-        Parent node= FXMLLoader.load(getClass().getResource("/view/adminView/dashboard-form.fxml"));
-        Scene scn =new Scene(node);
-        Stage stg = (Stage) this.rootUser.getScene().getWindow();
-        stg.setScene(scn);
-        stg.setTitle("HomePage");
-        stg.show();
-    }
-
     public void btnDeleteAction(ActionEvent actionEvent) {
     }
 

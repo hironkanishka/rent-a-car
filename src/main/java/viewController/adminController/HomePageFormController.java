@@ -58,12 +58,9 @@ public class HomePageFormController {
     }
 
     public void btnUserAccountManage(ActionEvent actionEvent) throws IOException {
-        Parent pane1 = FXMLLoader.load(getClass().getResource("/view/adminView/user-acount-login-control.fxml"));
-        Scene scn =new Scene(pane1);
-        Stage stg = (Stage) this.root.getScene().getWindow();
-        stg.setScene(scn);
-        stg.setTitle("Admin Login");
-        stg.show();
+        Parent pane1 = FXMLLoader.load(getClass().getResource("/view/adminView/user-account-table.fxml"));
+        this.rootBranch.getChildren().clear();
+        this.rootBranch.getChildren().add(pane1);
     }
 
     public void btnReturnManage(ActionEvent actionEvent) throws IOException {

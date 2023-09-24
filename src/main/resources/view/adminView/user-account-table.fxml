@@ -20,17 +20,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="34.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnHomeAction" style="-fx-background-color: #4bcffa;" text="Home" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
       <Button layoutX="217.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #ef5777;" text="Delete" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="290.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnUpdateAction" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
+      <Button layoutX="292.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnUpdateAction" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
