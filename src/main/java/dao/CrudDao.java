@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 public interface CrudDao<T,ID> extends SuperDao{
      boolean save(T t) throws SQLException, ClassNotFoundException;
-     boolean update(T t);
-     boolean delete(ID id);
+     boolean update(T t) throws SQLException, ClassNotFoundException;
+     boolean delete(ID id) throws SQLException, ClassNotFoundException;
     T get (ID id) ;
-    ArrayList<T > getAll();
+    ArrayList<T > getAll() throws SQLException, ClassNotFoundException;
 
 }

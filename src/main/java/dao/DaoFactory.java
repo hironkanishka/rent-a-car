@@ -17,7 +17,8 @@ public class DaoFactory {
         switch(type) {
             case USER:
                return new UserDaoImpl();
-
+            case CATEGORY:
+                return new CategoryDaoImpl();
             default:
                 return null;
         }
