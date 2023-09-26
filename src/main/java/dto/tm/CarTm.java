@@ -1,16 +1,14 @@
-package dto;
+package dto.tm;
 
 import lombok.*;
-
-import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
+public class CarTm {
 
-public class CarDto {
     private String carId;
     private String brand;
     private String model;
@@ -18,5 +16,4 @@ public class CarDto {
     private String vehicleNo;
     private Double pricePerDay;
     private String cCategoryId;
-
 }

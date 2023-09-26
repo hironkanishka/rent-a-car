@@ -2,41 +2,55 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="rootManageCars" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.adminController.CarManageController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="27.0" text="Manage Cars " textFill="WHITE">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="14.0" text="Manage Cars " textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="372.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0fbcf9;" text="Add" textFill="WHITE">
+      <Button layoutX="370.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0fbcf9;" text="Add" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="219.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnClearAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #ef5777;" text="Clear" textFill="WHITE">
+      <Button layoutX="226.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #ef5777;" text="Delete" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView fx:id="tableCars" layoutX="17.0" layoutY="56.0" onMouseClicked="#mouseClickedCarTable" prefHeight="200.0" prefWidth="417.0">
+      <TableView fx:id="tableCars" layoutX="17.0" layoutY="35.0" onMouseClicked="#mouseClickedCarTable" prefHeight="128.0" prefWidth="417.0">
         <columns>
-          <TableColumn prefWidth="47.0" text="car Id" />
-            <TableColumn prefWidth="47.0" text="brand" />
-            <TableColumn prefWidth="64.0" text="model" />
-            <TableColumn prefWidth="30.0" text="year" />
-            <TableColumn prefWidth="63.0" text="vehicle no" />
-            <TableColumn prefWidth="85.0" text="price per day" />
-            <TableColumn prefWidth="72.0" text="category id" />
+          <TableColumn fx:id="colCarId" prefWidth="47.0" text="car Id" />
+            <TableColumn fx:id="colBrand" prefWidth="47.0" text="brand" />
+            <TableColumn fx:id="colModel" prefWidth="64.0" text="model" />
+            <TableColumn fx:id="colYear" prefWidth="30.0" text="year" />
+            <TableColumn fx:id="colVehicleNo" prefWidth="63.0" text="vehicle no" />
+            <TableColumn fx:id="colPPday" prefWidth="85.0" text="price per day" />
+            <TableColumn fx:id="colCcategoryId" prefWidth="72.0" text="category id" />
         </columns>
       </TableView>
-      <Button layoutX="296.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnUpdateAction" style="-fx-background-color: #0be881;" text="Update" textFill="WHITE">
+      <Button layoutX="298.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnUpdateAction" style="-fx-background-color: #0be881;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtYear" layoutX="224.0" layoutY="213.0" promptText="year" />
+      <TextField fx:id="txtModel" layoutX="224.0" layoutY="181.0" promptText="model" />
+      <TextField fx:id="txtBrand" layoutX="52.0" layoutY="213.0" promptText="brand" />
+      <TextField fx:id="txtPPday" layoutX="224.0" layoutY="246.0" promptText="price per day" />
+      <TextField fx:id="txtVehicleNo" layoutX="52.0" layoutY="246.0" promptText="vehicle number" />
+      <TextField fx:id="txtCarId" layoutX="52.0" layoutY="179.0" promptText="carId" />
+      <ChoiceBox fx:id="choiceCategory" layoutX="52.0" layoutY="279.0" prefWidth="150.0" />
+      <Button layoutX="289.0" layoutY="279.0" mnemonicParsing="false" onAction="#btnClearAction" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #fbc531;" text="Clear Feilds" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

@@ -19,6 +19,8 @@ public class DaoFactory {
                return new UserDaoImpl();
             case CATEGORY:
                 return new CategoryDaoImpl();
+            case CAR:
+                return new CarDaoImpl();
             default:
                 return null;
         }

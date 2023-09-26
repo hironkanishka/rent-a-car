@@ -19,6 +19,8 @@ public class ServiceFactory {
                return new UserServiceImpl();
             case CATEGORY:
                 return new CategoryServiceImpl();
+            case CAR:
+                return new CarServiceImpl();
             default:
                 return null;
         }

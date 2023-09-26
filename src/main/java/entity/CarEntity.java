@@ -14,7 +14,7 @@ public class CarEntity {
     private String carId;
     private String brand;
     private String model;
-    private Date year;
+    private String year;
     private String vehicleNo;
     private Double pricePerDay;
     private String cCategoryId;
