@@ -21,6 +21,7 @@ public class ReturnManageController {
     public Label labelCurrenTotalPayment;
     public Label labelBalanceLeftToPay;
     public ChoiceBox isReturnedChoice;
+    public Label labelOverDueDays;
 
     public void btnAddAction(ActionEvent actionEvent) throws IOException {
 

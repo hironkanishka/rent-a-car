@@ -10,8 +10,8 @@ import java.util.Date;
 @ToString
 public class RentEntity {
     private String rentID;
-    private Date fromDate;
-    private Date toDate;
+    private String fromDate;
+    private String toDate;
     private Double perDayRent;
     private Double advancedPayment;
     private Double refundable;
@@ -19,5 +19,6 @@ public class RentEntity {
     private Double balance;
     private String cCustId;
     private String cCarId;
+    private String isReturned;
 
 }

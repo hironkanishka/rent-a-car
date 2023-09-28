@@ -3,6 +3,7 @@ package dao;
 import dao.util.CrudUtil;
 import entity.CarEntity;
 import entity.CategoryEntity;
+import entity.CustomerEntity;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -38,7 +39,16 @@ public class CarDaoImpl implements CarDao{
     }
 
     @Override
-    public CarEntity get(String s) {
+    public CarEntity get(String s) throws SQLException, ClassNotFoundException {
+        ResultSet rst = CrudUtil.executeQuery("select * from car where carId =?", s);
+
+        while (rst.next()){
+            CarEntity ce =new CarEntity(rst.getString(1),rst.getString(2),
+                    rst.getString(3),rst.getString(4),rst.getString(5),
+                    rst.getDouble(6),rst.getString(7)
+            ); return ce;
+        }
+
         return null;
     }
 
@@ -52,6 +62,20 @@ public class CarDaoImpl implements CarDao{
                     rst.getString(3),rst.getString(4),
                     rst.getString(5),Double.valueOf(rst.getString(6)),rst.getString(7)
                     );
+            carEntities.add(ce);
+        } return carEntities;
+    }
+
+    @Override
+    public ArrayList<CarEntity> getAllbyID(String id) throws SQLException, ClassNotFoundException {
+        String sql="select * from car where category_categoryId=?";
+        ResultSet rst = CrudUtil.executeQuery(sql , id);
+        ArrayList<CarEntity> carEntities =new ArrayList<>();
+        while (rst.next()){
+            CarEntity ce =new CarEntity(rst.getString(1),rst.getString(2),
+                    rst.getString(3),rst.getString(4),
+                    rst.getString(5),Double.valueOf(rst.getString(6)),rst.getString(7)
+            );
             carEntities.add(ce);
         } return carEntities;
     }

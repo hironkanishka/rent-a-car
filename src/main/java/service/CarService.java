@@ -11,4 +11,5 @@ public interface CarService extends SuperService{
     boolean deleteCar(String id) throws SQLException, ClassNotFoundException;
     CarDto  getCar(String id) throws SQLException, ClassNotFoundException;
     ArrayList<CarDto> getAll() throws SQLException, ClassNotFoundException;
+    ArrayList<CarDto> getAllById(String id) throws SQLException, ClassNotFoundException;
 }

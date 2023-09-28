@@ -4,7 +4,9 @@ import dao.CarDao;
 import dao.DaoFactory;
 import dto.CarDto;
 
+import dto.CustomerDto;
 import entity.CarEntity;
+import entity.CustomerEntity;
 
 
 import java.sql.SQLException;
@@ -34,7 +36,10 @@ public class CarServiceImpl implements CarService{
 
     @Override
     public CarDto getCar(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        CarEntity ce= cd.get(id);
+        return new CarDto(
+                ce.getCarId(),ce.getBrand(),ce.getModel(),ce.getYear(),ce.getVehicleNo(),ce.getPricePerDay(),ce.getCCategoryId());
+
     }
 
     @Override
@@ -47,5 +52,16 @@ public class CarServiceImpl implements CarService{
             cdtos.add(dto);
         } return cdtos;
 
+    }
+
+    @Override
+    public ArrayList<CarDto> getAllById(String id) throws SQLException, ClassNotFoundException {
+        ArrayList<CarEntity> carEntities= cd.getAllbyID(id);
+        ArrayList<CarDto> cdtos =new ArrayList<>();
+        for(CarEntity ce : carEntities )
+        {
+            CarDto dto =new CarDto(ce.getCarId(),ce.getBrand(),ce.getModel(),ce.getYear(),ce.getVehicleNo(),ce.getPricePerDay(),ce.getCCategoryId());
+            cdtos.add(dto);
+        } return cdtos;
     }
 }

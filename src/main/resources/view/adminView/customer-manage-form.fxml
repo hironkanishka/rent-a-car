@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -15,26 +16,36 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="372.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0fbcf9;" text="Add" textFill="WHITE">
+      <Button layoutX="378.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0fbcf9;" text="Add" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="219.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnClearAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #ef5777;" text="Clear" textFill="WHITE">
+      <Button layoutX="252.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnClearAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #ef5777;" text="Clear" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView fx:id="tableCars" layoutX="17.0" layoutY="56.0" onMouseClicked="#mouseClickedCustomerTable" prefHeight="200.0" prefWidth="417.0">
+      <TableView fx:id="tableCustomers" layoutX="17.0" layoutY="56.0" onMouseClicked="#mouseClickedCustomerTable" prefHeight="150.0" prefWidth="417.0">
         <columns>
-          <TableColumn prefWidth="71.0" text="Cust ID" />
-            <TableColumn prefWidth="78.0" text="Cust Name" />
-            <TableColumn prefWidth="68.0" text="NIC" />
-            <TableColumn prefWidth="111.0" text="Address" />
-            <TableColumn prefWidth="88.0" text="Phone number" />
+          <TableColumn fx:id="colCostId" prefWidth="71.0" text="Cust ID" />
+            <TableColumn fx:id="colCustName" prefWidth="78.0" text="Cust Name" />
+            <TableColumn fx:id="colNic" prefWidth="68.0" text="NIC" />
+            <TableColumn fx:id="colAddress" prefWidth="111.0" text="Address" />
+            <TableColumn fx:id="colPhone" prefWidth="88.0" text="Phone number" />
         </columns>
       </TableView>
-      <Button layoutX="296.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnUpdateAction" style="-fx-background-color: #0be881;" text="Update" textFill="WHITE">
+      <Button layoutX="315.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnUpdateAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0be881;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtCustId" layoutX="17.0" layoutY="217.0" promptText="id" />
+      <TextField fx:id="txtAddress" layoutX="222.0" layoutY="249.0" promptText="Address" />
+      <TextField fx:id="txtNic" layoutX="17.0" layoutY="248.0" promptText="nic" />
+      <TextField fx:id="txtCostName" layoutX="222.0" layoutY="218.0" promptText="name" />
+      <TextField fx:id="txtPhone" layoutX="17.0" layoutY="281.0" promptText="phone" />
+      <Button layoutX="187.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #ef5777;" text="Delete" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

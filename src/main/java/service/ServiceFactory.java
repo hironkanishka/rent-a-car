@@ -21,6 +21,10 @@ public class ServiceFactory {
                 return new CategoryServiceImpl();
             case CAR:
                 return new CarServiceImpl();
+            case CUSTOMER:
+                return new CustomerServiceImpl();
+            case RENT:
+                return new RentServiceImpl();
             default:
                 return null;
         }

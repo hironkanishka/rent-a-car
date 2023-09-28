@@ -21,6 +21,11 @@ public class DaoFactory {
                 return new CategoryDaoImpl();
             case CAR:
                 return new CarDaoImpl();
+            case CUSTOMER:
+                return new CustomerDaoImpl();
+            case RENT:
+                return new RentDaoImpl();
+
             default:
                 return null;
         }

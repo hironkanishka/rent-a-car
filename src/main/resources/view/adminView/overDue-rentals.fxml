@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootRent" prefHeight="393.0" prefWidth="661.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.adminController.OverDueRentalsController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="26.0" prefHeight="21.0" prefWidth="123.0" text="Over due Rentals" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableOverdue" layoutX="17.0" layoutY="56.0" prefHeight="267.0" prefWidth="625.0">
+        <columns>
+          <TableColumn fx:id="colRentID" prefWidth="60.0" text="Rent ID" />
+            <TableColumn fx:id="colCustomerID" prefWidth="68.0" text="customerId" />
+            <TableColumn fx:id="colCarID" prefWidth="61.0" text="CarID" />
+            <TableColumn fx:id="colTotal" prefWidth="56.0" text="total" />
+            <TableColumn fx:id="colBalance" prefWidth="66.0" text="balance" />
+            <TableColumn fx:id="colOverdueDays" prefWidth="87.0" text="Overdue Days" />
+            <TableColumn fx:id="colExtraFee" prefWidth="97.0" text="Extra fee" />
+            <TableColumn fx:id="colNewTotalBalance" prefWidth="128.0" text="New Total Balance" />
+        </columns>
+      </TableView>
+      <Button layoutX="495.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnHome" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #00a8ff;" text="HOME" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
