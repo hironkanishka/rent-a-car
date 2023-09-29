@@ -20,8 +20,11 @@ public class RentDaoImpl implements RentDao{
     }
 
     @Override
-    public boolean update(RentEntity rentEntity) throws SQLException, ClassNotFoundException {
-        return false;
+    public boolean update(RentEntity r) throws SQLException, ClassNotFoundException {
+        String sql="UPDATE rent SET total = ?, balance = ?, Is_returned = ?  WHERE (rentID = ?)";
+
+        return CrudUtil.executeUpdate(sql, r.getTotal(),r.getBalance(),r.getIsReturned(),r.getRentID()
+        ) ;
     }
 
     @Override
@@ -31,6 +34,16 @@ public class RentDaoImpl implements RentDao{
 
     @Override
     public RentEntity get(String s) throws SQLException, ClassNotFoundException {
+        ResultSet rst = CrudUtil.executeQuery("select * from rent where rentId =?", s);
+
+        while (rst.next()){
+            RentEntity   re =new RentEntity(rst.getString(1),rst.getString(2),
+                    rst.getString(3),rst.getDouble(4),rst.getDouble(5),
+                    rst.getDouble(6),rst.getDouble(7),
+                    rst.getDouble(8),rst.getString(9),rst.getString(10),rst.getString(11)
+            ); return re;
+        }
+
         return null;
     }
 

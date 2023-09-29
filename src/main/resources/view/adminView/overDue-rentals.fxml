@@ -27,7 +27,7 @@
             <TableColumn fx:id="colNewTotalBalance" prefWidth="128.0" text="New Total Balance" />
         </columns>
       </TableView>
-      <Button layoutX="495.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnHome" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #00a8ff;" text="HOME" textFill="WHITE">
+      <Button layoutX="512.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnHome" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #00a8ff;" text="HOME" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

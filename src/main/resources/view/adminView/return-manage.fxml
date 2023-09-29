@@ -10,12 +10,11 @@
 
 <AnchorPane fx:id="rootNewRent" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.adminController.ReturnManageController">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="23.0" text="Return Manage" textFill="WHITE">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="14.0" text="Return Manage" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="txtRentId" layoutX="50.0" layoutY="75.0" promptText="rentID" />
       <Button layoutX="365.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnAddAction" style="-fx-background-color: #0be881;" text="Save" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -26,26 +25,34 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label alignment="TOP_LEFT" layoutX="58.0" layoutY="116.0" prefHeight="21.0" prefWidth="129.0" text="Current  Total Payment" textFill="WHITE" />
-      <TextField fx:id="newTotalPayment" layoutX="48.0" layoutY="209.0" promptText="New total payment" />
-      <Label fx:id="labelCurrenTotalPayment" alignment="TOP_LEFT" layoutX="48.0" layoutY="141.0" prefHeight="21.0" prefWidth="150.0" style="-fx-background-color: #dcdde1;" textFill="WHITE">
+      <Label alignment="TOP_LEFT" layoutX="35.0" layoutY="116.0" prefHeight="21.0" prefWidth="129.0" text="Current  Total Payment" textFill="WHITE" />
+      <TextField fx:id="newTotalPayment" layoutX="25.0" layoutY="209.0" promptText=" Payement received" />
+      <Label fx:id="labelCurrenTotalPayment" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="141.0" prefHeight="21.0" prefWidth="150.0" style="-fx-background-color: #dcdde1;">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="259.0" layoutY="183.0" prefHeight="21.0" prefWidth="129.0" text="Is retuned" textFill="WHITE" />
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="270.0" layoutY="113.0" prefHeight="21.0" prefWidth="129.0" text="Balance Left To pay " textFill="WHITE" />
-      <Label fx:id="labelBalanceLeftToPay" alignment="TOP_LEFT" layoutX="260.0" layoutY="141.0" prefHeight="21.0" prefWidth="150.0" style="-fx-background-color: #dcdde1;" textFill="WHITE">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="270.0" layoutY="113.0" prefHeight="21.0" prefWidth="129.0" text="Full Balance Left To pay " textFill="WHITE" />
+      <Label fx:id="labelBalanceLeftToPay" alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="141.0" prefHeight="21.0" prefWidth="150.0" style="-fx-background-color: #dcdde1;">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
       <ChoiceBox fx:id="isReturnedChoice" layoutX="260.0" layoutY="209.0" prefWidth="150.0" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="259.0" layoutY="48.0" prefHeight="21.0" prefWidth="129.0" text="OverDueDays count" textFill="WHITE" />
-      <Label fx:id="labelOverDueDays" alignment="TOP_LEFT" layoutX="260.0" layoutY="77.0" prefHeight="21.0" prefWidth="150.0" style="-fx-background-color: #dcdde1;" textFill="WHITE">
+      <Label fx:id="labelOverDueDays" alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="77.0" prefHeight="21.0" prefWidth="150.0" style="-fx-background-color: #dcdde1;">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
+      <ChoiceBox fx:id="choiceRentID" layoutX="25.0" layoutY="75.0" prefHeight="25.0" prefWidth="92.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="48.0" prefHeight="21.0" prefWidth="92.0" text="Select Rent ID" textFill="WHITE" />
+      <Button layoutX="129.0" layoutY="75.0" mnemonicParsing="false" onAction="#btnLoadData" style="-fx-background-color: #9c88ff;" text="Load Data" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="183.0" prefHeight="21.0" prefWidth="129.0" text="New Total payment" textFill="WHITE" />
    </children>
 </AnchorPane>

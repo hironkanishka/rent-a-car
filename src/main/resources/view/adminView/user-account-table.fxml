@@ -15,29 +15,24 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="365.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #0be881;" text="Add" textFill="WHITE">
+      <Button layoutX="317.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnManage" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #0be881;" text="Manage Users" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="217.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #ef5777;" text="Delete" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button layoutX="292.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnUpdateAction" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <TableView fx:id="userAccountTable" layoutX="37.0" layoutY="56.0" prefHeight="200.0" prefWidth="377.0">
+      <TableView fx:id="userAccountTable" layoutX="22.0" layoutY="56.0" prefHeight="200.0" prefWidth="392.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Id" />
-          <TableColumn prefWidth="75.0" text="Name" />
-            <TableColumn prefWidth="75.0" text="nic" />
-            <TableColumn prefWidth="75.0" text="UserName" />
-            <TableColumn prefWidth="75.0" text="Password" />
+          <TableColumn fx:id="colUserID" prefWidth="58.0" text="userID" />
+            <TableColumn fx:id="colName" prefWidth="55.0" text="Name" />
+            <TableColumn fx:id="colNic" prefWidth="89.0" text="NIC" />
+            <TableColumn fx:id="colUserName" prefWidth="83.0" text="userName" />
+            <TableColumn fx:id="colPassword" prefWidth="106.0" text="Password" />
         </columns>
       </TableView>
+      <Button layoutX="200.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e84118;" text="Delete user" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

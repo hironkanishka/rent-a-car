@@ -8,7 +8,7 @@ import lombok.*;
 @Setter
 @ToString
 public class UserProfileEntity {
-   // private String id;
+   private String  id;
     private String name;
     private String nic;
     private String userName;

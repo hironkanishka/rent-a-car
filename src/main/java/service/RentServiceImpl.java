@@ -21,8 +21,11 @@ public class RentServiceImpl implements RentService {
     }
 
     @Override
-    public boolean updateRent(RentDto dto, String id) throws SQLException, ClassNotFoundException {
-        return false;
+    public boolean updateRent(RentDto d) throws SQLException, ClassNotFoundException {
+        return rd.update(new RentEntity(
+                d.getRentID(),d.getFromDate(),d.getToDate(),d.getPerDayRent(),
+                d.getAdvancedPayment(),d.getRefundable(),d.getTotal(),d.getBalance(),d.getCCustId(),d.getCCarId(),d.getIsReturned()
+        ) );
     }
 
     @Override
@@ -32,7 +35,10 @@ public class RentServiceImpl implements RentService {
 
     @Override
     public RentDto getRent(String id) throws SQLException, ClassNotFoundException {
-        return null;
+        RentEntity r= rd.get(id);
+        return new RentDto(
+                r.getRentID(),r.getFromDate(),r.getToDate(),r.getPerDayRent(),r.getAdvancedPayment(),r.getRefundable(),r.getTotal(),r.getBalance(),r.getCCustId(),r.getCCarId(),r.getIsReturned()
+        );
     }
 
     @Override

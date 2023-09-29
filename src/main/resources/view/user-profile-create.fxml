@@ -14,8 +14,8 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="txtNic" layoutX="249.0" layoutY="74.0" promptText="nic" />
-      <TextField fx:id="txtName" layoutX="48.0" layoutY="74.0" promptText="name" />
+      <TextField fx:id="txtNic" layoutX="252.0" layoutY="150.0" promptText="nic" />
+      <TextField fx:id="txtName" layoutX="51.0" layoutY="150.0" promptText="name" />
       <Button layoutX="365.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnAddAction" style="-fx-background-color: #0be881;" text="Add" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -31,9 +31,20 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TextField fx:id="txtUserName" layoutX="48.0" layoutY="181.0" promptText="New Username" style="-fx-background-color: #ffdd59;" />
-      <TextField fx:id="txtPassword" layoutX="253.0" layoutY="181.0" promptText="password" style="-fx-background-color: #ffdd59;" />
-      <Label layoutX="100.0" layoutY="145.0" text="Now enter New User name  ans A Password" textFill="WHITE">
+      <TextField fx:id="txtUserName" layoutX="48.0" layoutY="236.0" promptText="New Username" style="-fx-background-color: #ffdd59;" />
+      <TextField fx:id="txtPassword" layoutX="253.0" layoutY="236.0" promptText="password" style="-fx-background-color: #ffdd59;" />
+      <Label layoutX="100.0" layoutY="200.0" text="Now enter New User name  ans A Password" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserId" layoutX="151.0" layoutY="97.0" promptText="User ID" />
+      <Button layoutX="52.0" layoutY="97.0" mnemonicParsing="false" onAction="#btnGetNow" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #4bcffa;" text="Get Now" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="80.0" layoutY="70.0" text="Get New UserID" textFill="WHITE">
          <font>
             <Font size="13.0" />
          </font>
