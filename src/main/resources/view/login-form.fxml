@@ -22,7 +22,7 @@
       <Label layoutX="61.0" layoutY="327.0" prefHeight="25.0" prefWidth="149.0" text="Don't Have An Account ?" textFill="WHITE" />
       <Hyperlink layoutX="203.0" layoutY="328.0" onAction="#linkRegisterAction" text="Register Here" />
       <PasswordField fx:id="txtPassword" layoutX="102.0" layoutY="188.0" promptText="Password" />
-      <Button layoutX="145.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: #0be881;" text="Login" textFill="WHITE">
+      <Button layoutX="187.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #0be881;" text="User Login" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -32,5 +32,10 @@
             <Image url="@../images/user.png" />
          </image>
       </ImageView>
+      <Button layoutX="46.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnAdminLogin" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #9c88ff;" text="Admin Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>
